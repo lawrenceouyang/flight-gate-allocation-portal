@@ -1,0 +1,30 @@
+{
+  "include": [
+    "APP_BAR",
+    "BUTTON",
+    "CARD",
+    "CHECKBOX",
+    "LINK",
+    "TABS",
+    "INPUT",
+    "MENU",
+    "PROGRESS_BAR",
+    "RIPPLE",
+    "SLIDER"
+  ],
+  "customProperties": {
+    "color-primary": "var(--palette-deep-purple-500)",
+    "color-primary-dark": "var(--palette-deep-purple-700)",
+    "color-accent": "var(--palette-teal-500)",
+    "color-accent-dark": "palette-teal-700)",
+    "appbar-h-padding": "calc(1.4 * var(--unit))",
+    "tab-pointer-height": "calc(0.4 * var(--unit))",
+    "tab-inverse-bar-color": "var(--color-primary-dark)",
+    "tab-label-height": "calc(6.4 * var(--unit))",
+    "input-text-label-color": "color(var(--color-black) a(50%))",
+    "input-padding": "calc(1.6 * var(--unit))",
+    "input-field-padding": "calc(0.4 * var(--unit))",
+    "input-focus-label-top": "calc(0.1 * var(--unit))"
+  },
+  "output": "src/Theme"
+}

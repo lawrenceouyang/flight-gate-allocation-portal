@@ -1,0 +1,212 @@
+@import '_constants'
+
+#root, html, body
+  height: 100%
+
+body
+  height: 100%
+  margin: 0
+  font-family: 'Roboto', sans-serif
+  box-sizing: border-box
+  background: #fbfbfb
+  color: #333
+  &::-webkit-scrollbar
+    width: 7px
+    background-color: #F5F5F5
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(215, 225, 249, 0.3)
+    border-radius: 10px
+    background-color: #F5F5F5
+  &::-webkit-scrollbar-thumb
+      border-radius: 10px
+      -webkit-box-shadow: inset 0 0 6px rgba(215, 225, 249, 0.3)
+      background-color: #555
+
+h1
+  font-size: 1.8em
+  margin-bottom: 5px
+
+a
+  text-decoration: none
+
+/* FORM STUFF */
+label
+  font-size: .75em
+  font-weight: 600
+  &.required
+    &:after
+      content: " *"
+      color: #cd5c5c
+
+.input-body
+  width: 100%
+
+
+.login-input
+  color: #fff
+  label
+    color: #fff
+  input
+    color: #fff
+    border-bottom: 1px solid #fff
+
+input[type='text'], input[type='password'], textarea
+    width: 100%
+//  box-sizing: border-box
+//  font-family: 'Open Sans', sans-serif
+//  border-radius: 5px
+//  border: none
+//  height: 40px
+//  background: #ffffff
+//  transition: box-shadow 0.1s
+//  color: #333
+//  margin-top: 2.1vh
+//  &.error
+//    box-shadow: 0 0 1px 1px indianred inset
+//    background: #ffeae8
+//    &:focus
+//      box-shadow: 0 0 1px 1px indianred inset
+//  &:focus
+//    outline: none
+//    box-shadow: 0 0 5px 0 $primary-color
+//  &:disabled
+//    background: #e2e2e2 !important
+
+textarea
+  resize: none
+  min-height: 80px
+  padding: 10px 12px
+
+input
+  padding: 5px 12px
+
+.input-container
+  margin: 10px 0
+
+.btn
+  border: none
+  min-width: 150px
+  width: auto
+  color: #fff
+  cursor: pointer
+  transition: background 0.15s
+  font-size: .9em
+  border-radius: 3px
+  padding: 8px 12px
+  font-weight: 500
+  text-align: center
+
+.btn-primary
+  @extend .btn
+  background: $primary-color
+  &:hover
+    background: $primary-color-hover
+  &:active
+    background: $primary-color-active
+
+.btn-danger
+  @extend .btn
+  background: $danger-color
+  &:hover
+    background: $danger-color-hover
+
+.btn-warning
+  @extend .btn
+  background: $warning-color
+  &:hover
+    background: $warning-color-hover
+
+.btn-success
+  @extend .btn
+  background: $success-color
+  &:hover
+    background: $success-color-hover
+/* END FORM STUFF */
+
+/* Flexing */
+
+.flex
+  flex: 1
+
+.flex-root
+  display: flex
+  flex-direction: column
+  height: 100%
+
+
+.flex-root-row
+  display: flex
+  flex-direction: row
+  height: 100%
+
+
+.flex-center
+  justify-content: center !important
+
+
+.center-in-column
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+
+.center-in-row
+  display: flex
+  flex-direction: row
+  justify-content: center
+
+
+.center-in
+  display: flex
+  justify-content: center
+  align-items: center
+
+.flex-column
+  display: flex
+  flex-direction: column
+
+.flex-row
+  display: flex
+  flex-direction: row
+
+.layout-root
+  @extend .flex-column
+  min-height: 100vh
+  height: 100%
+
+.flexboxtweener, .flexboxtweener body
+  height: 100%
+/* End Flexing */
+
+.breadcrumb
+  color: $primary-color
+  font-size: .8em
+  &:hover
+    color: $primary-color-hover
+
+.error-text
+  color: indianred
+
+.height-100p
+  height: 100% !important
+
+.clear-text-transform
+  text-transform: none
+
+.clear-padding
+  padding: 0 !important
+
+.full-width
+  width: 100%
+
+.no-tab
+  tab-index: -1
+
+.container-limit
+  width: 75vw
+  min-width: 275px
+  max-width: 750px
+
+.card-form
+  width: 100%
+  padding: 3vh 6vw

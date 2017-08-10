@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>OGAP</title>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  window.appVersion = "{{ VERSION }}";
+  window.userName = "{{ request.session.username }}";
+  window.fullName = "{{ request.session.fullname }}";
+</script>
+<script src="http://localhost:3000/static/js/app-bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Install with: `pip install -r dependent-requirements.txt`
+
+# Coin Cbc
+cylp >= 0.2, < 0.2.3.9999

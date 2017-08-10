@@ -1,0 +1,22 @@
+.DS_Store
+*.pyc
+db.sqlite3
+workspace.xml
+.idea/
+*.md
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
